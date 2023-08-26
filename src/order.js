@@ -5,7 +5,7 @@ function takeOrder(order, orderList){
 }
 
 function refundOrder(orderNumber, orderList) {
-  for (let i = 0; i < orderList.length; i++) {
+  for (var i = 0; i < orderList.length; i++) {
     if (orderList[i].orderNumber === orderNumber) {
       orderList.splice([i], 1);
     }
